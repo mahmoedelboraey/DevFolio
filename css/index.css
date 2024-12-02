@@ -1,0 +1,1106 @@
+
+/* public */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* html{
+  scroll-behavior: smooth;
+} */
+body {
+  font-family: "Noto Sans", sans-serif;
+  
+}
+
+:root {
+  --primery-color: rgb(0, 120, 255);
+  --second-color: #4e4e4e;
+  --shadow-color: #cde1f8;
+  scroll-behavior:smooth;
+}
+li {
+  list-style-type: none;
+}
+.line-mf {
+  width: 40px;
+  background-color: var(--primery-color);
+  height: 5px;
+  margin: 0 auto;
+}
+.title-a {
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.pragrph-a {
+  color: var(--second-color);
+}
+.s-title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.4rem 0;
+}
+a {
+  text-decoration: none;
+}
+
+/* end public */
+/* start nav */
+.header .navbar .navbar-brand,
+.header .navbar .nav-item {
+  font-weight: 600;
+}
+.header .navbar .navbar-brand {
+  font-size: 28px;
+}
+.navbar-nav .home {
+  position: relative;
+  overflow: hidden;
+  margin-left: 10px;
+}
+.navbar-nav .home::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.navbar-nav .home:hover::after {
+  width: 100%;
+  
+}
+/* end nav */
+
+/* start header */
+.header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))),
+    url(../img/hero-bg.jpg);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/hero-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/hero-bg.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header .title h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.header p::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+  font-size: 36px;
+  -webkit-animation-name: typing;
+          animation-name: typing;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@-webkit-keyframes typing {
+  1% {
+    content: " |";
+  }
+
+  2% {
+    content: "D |";
+  }
+
+  3% {
+    content: "De |";
+  }
+
+  4% {
+    content: "Dev |";
+  }
+
+  5% {
+    content: "Deve |";
+  }
+
+  6% {
+    content: "Devel |";
+  }
+
+  7% {
+    content: "Develo |";
+  }
+
+  8% {
+    content: "Develop |";
+  }
+
+  9% {
+    content: "Develope |";
+  }
+
+  10% {
+    content: "Developer |";
+  }
+  11% {
+    content: "Developer |";
+  }
+  12% {
+    content: "Developer |";
+  }
+  13% {
+    content: "Developer |";
+  }
+  14% {
+    content: "Developer |";
+  }
+  15% {
+    content: "Developer |";
+  }
+
+  16% {
+    content: "Develope |";
+  }
+
+  17% {
+    content: "Develop |";
+  }
+
+  18% {
+    content: "Develo |";
+  }
+
+  19% {
+    content: "Devel |";
+  }
+
+  20% {
+    content: "Deve |";
+  }
+
+  21% {
+    content: "Dev |";
+  }
+
+  22% {
+    content: "De |";
+  }
+
+  23% {
+    content: "Des|";
+  }
+
+  24% {
+    content: "Desi|";
+  }
+
+  25% {
+    content: " Desig |";
+  }
+
+  26% {
+    content: " Design |";
+  }
+  27% {
+    content: " Designe |";
+  }
+  28% {
+    content: " Designer |";
+  }
+  29% {
+    content: " Designer |";
+  }
+  40% {
+    content: " Designer |";
+  }
+  31% {
+    content: " Designer |";
+  }
+  32% {
+    content: " Designer |";
+  }
+  33% {
+    content: " Designer |";
+  }
+  34% {
+    content: " Designe |";
+  }
+  35% {
+    content: " Design |";
+  }
+  36% {
+    content: " Desig |";
+  }
+  37% {
+    content: " Desi |";
+  }
+  38% {
+    content: " Des |";
+  }
+  39% {
+    content: " De |";
+  }
+  40% {
+    content: " D |";
+  }
+  41% {
+    content: "  |";
+  }
+  42% {
+    content: "f  |";
+  }
+  43% {
+    content: "fr  |";
+  }
+  44% {
+    content: " fre |";
+  }
+
+  45% {
+    content: "free |";
+  }
+  46% {
+    content: "freel  |";
+  }
+  47% {
+    content: "freela  |";
+  }
+  48% {
+    content: "freelan  |";
+  }
+  49% {
+    content: "freelanc|";
+  }
+  50% {
+    content: "freelance  |";
+  }
+  51% {
+    content: "freelancer  |";
+  }
+  52% {
+    content: "freelancer  |";
+  }
+  53% {
+    content: "freelancer  |";
+  }
+  54% {
+    content: "freelancer  |";
+  }
+  55% {
+    content: "freelancer  |";
+  }
+  56% {
+    content: "freelancer  |";
+  }
+  57% {
+    content: "freelancer  |";
+  }
+  58% {
+    content: "freelancer  |";
+  }
+  59% {
+    content: "freelance  |";
+  }
+  60% {
+    content: "freelanc  |";
+  }
+  61% {
+    content: "freelan  |";
+  }
+  62% {
+    content: "freela  |";
+  }
+  63% {
+    content: "freel  |";
+  }
+  64% {
+    content: "free  |";
+  }
+  65% {
+    content: " fre |";
+  }
+  66% {
+    content: "fr  |";
+  }
+  67% {
+    content: "f  |";
+  }
+  68% {
+    content: "  |";
+  }
+  69% {
+    content: "p  |";
+  }
+  70% {
+    content: "ph  |";
+  }
+  71% {
+    content: "pho  |";
+  }
+  72% {
+    content: "phot  |";
+  }
+  73% {
+    content: "photo  |";
+  }
+  74% {
+    content: "photog  |";
+  }
+  75% {
+    content: "photogr  |";
+  }
+  76% {
+    content: "photogra  |";
+  }
+  77% {
+    content: "photograp  |";
+  }
+  78% {
+    content: "photograph  |";
+  }
+  79% {
+    content: "photographe |";
+  }
+  80% {
+    content: "photographer  |";
+  }
+  81% {
+    content: "photographer  |";
+  }
+  82% {
+    content: "photographer  |";
+  }
+  83% {
+    content: "photographer  |";
+  }
+  84% {
+    content: "photographer  |";
+  }
+  85% {
+    content: "photographer  |";
+  }
+  86% {
+    content: "photographe  |";
+  }
+  87% {
+    content: "photograph  |";
+  }
+  88% {
+    content: "photograp  |";
+  }
+  89% {
+    content: "photogra  |";
+  }
+  90% {
+    content: "photogr |";
+  }
+  91% {
+    content: "photog  |";
+  }
+  92% {
+    content: "phot  |";
+  }
+  93% {
+    content: "pho |";
+  }
+  94% {
+    content: "ph  |";
+  }
+
+  95% {
+    content: "p  |";
+  }
+
+  96% {
+    content: "  |";
+  }
+  97% {
+    content: "  |";
+  }
+  98% {
+    content: "  |";
+  }
+  99% {
+    content: "  |";
+  }
+  100% {
+    content: "  |";
+  }
+}
+@keyframes typing {
+  1% {
+    content: " |";
+  }
+
+  2% {
+    content: "D |";
+  }
+
+  3% {
+    content: "De |";
+  }
+
+  4% {
+    content: "Dev |";
+  }
+
+  5% {
+    content: "Deve |";
+  }
+
+  6% {
+    content: "Devel |";
+  }
+
+  7% {
+    content: "Develo |";
+  }
+
+  8% {
+    content: "Develop |";
+  }
+
+  9% {
+    content: "Develope |";
+  }
+
+  10% {
+    content: "Developer |";
+  }
+  11% {
+    content: "Developer |";
+  }
+  12% {
+    content: "Developer |";
+  }
+  13% {
+    content: "Developer |";
+  }
+  14% {
+    content: "Developer |";
+  }
+  15% {
+    content: "Developer |";
+  }
+
+  16% {
+    content: "Develope |";
+  }
+
+  17% {
+    content: "Develop |";
+  }
+
+  18% {
+    content: "Develo |";
+  }
+
+  19% {
+    content: "Devel |";
+  }
+
+  20% {
+    content: "Deve |";
+  }
+
+  21% {
+    content: "Dev |";
+  }
+
+  22% {
+    content: "De |";
+  }
+
+  23% {
+    content: "Des|";
+  }
+
+  24% {
+    content: "Desi|";
+  }
+
+  25% {
+    content: " Desig |";
+  }
+
+  26% {
+    content: " Design |";
+  }
+  27% {
+    content: " Designe |";
+  }
+  28% {
+    content: " Designer |";
+  }
+  29% {
+    content: " Designer |";
+  }
+  40% {
+    content: " Designer |";
+  }
+  31% {
+    content: " Designer |";
+  }
+  32% {
+    content: " Designer |";
+  }
+  33% {
+    content: " Designer |";
+  }
+  34% {
+    content: " Designe |";
+  }
+  35% {
+    content: " Design |";
+  }
+  36% {
+    content: " Desig |";
+  }
+  37% {
+    content: " Desi |";
+  }
+  38% {
+    content: " Des |";
+  }
+  39% {
+    content: " De |";
+  }
+  40% {
+    content: " D |";
+  }
+  41% {
+    content: "  |";
+  }
+  42% {
+    content: "f  |";
+  }
+  43% {
+    content: "fr  |";
+  }
+  44% {
+    content: " fre |";
+  }
+
+  45% {
+    content: "free |";
+  }
+  46% {
+    content: "freel  |";
+  }
+  47% {
+    content: "freela  |";
+  }
+  48% {
+    content: "freelan  |";
+  }
+  49% {
+    content: "freelanc|";
+  }
+  50% {
+    content: "freelance  |";
+  }
+  51% {
+    content: "freelancer  |";
+  }
+  52% {
+    content: "freelancer  |";
+  }
+  53% {
+    content: "freelancer  |";
+  }
+  54% {
+    content: "freelancer  |";
+  }
+  55% {
+    content: "freelancer  |";
+  }
+  56% {
+    content: "freelancer  |";
+  }
+  57% {
+    content: "freelancer  |";
+  }
+  58% {
+    content: "freelancer  |";
+  }
+  59% {
+    content: "freelance  |";
+  }
+  60% {
+    content: "freelanc  |";
+  }
+  61% {
+    content: "freelan  |";
+  }
+  62% {
+    content: "freela  |";
+  }
+  63% {
+    content: "freel  |";
+  }
+  64% {
+    content: "free  |";
+  }
+  65% {
+    content: " fre |";
+  }
+  66% {
+    content: "fr  |";
+  }
+  67% {
+    content: "f  |";
+  }
+  68% {
+    content: "  |";
+  }
+  69% {
+    content: "p  |";
+  }
+  70% {
+    content: "ph  |";
+  }
+  71% {
+    content: "pho  |";
+  }
+  72% {
+    content: "phot  |";
+  }
+  73% {
+    content: "photo  |";
+  }
+  74% {
+    content: "photog  |";
+  }
+  75% {
+    content: "photogr  |";
+  }
+  76% {
+    content: "photogra  |";
+  }
+  77% {
+    content: "photograp  |";
+  }
+  78% {
+    content: "photograph  |";
+  }
+  79% {
+    content: "photographe |";
+  }
+  80% {
+    content: "photographer  |";
+  }
+  81% {
+    content: "photographer  |";
+  }
+  82% {
+    content: "photographer  |";
+  }
+  83% {
+    content: "photographer  |";
+  }
+  84% {
+    content: "photographer  |";
+  }
+  85% {
+    content: "photographer  |";
+  }
+  86% {
+    content: "photographe  |";
+  }
+  87% {
+    content: "photograph  |";
+  }
+  88% {
+    content: "photograp  |";
+  }
+  89% {
+    content: "photogra  |";
+  }
+  90% {
+    content: "photogr |";
+  }
+  91% {
+    content: "photog  |";
+  }
+  92% {
+    content: "phot  |";
+  }
+  93% {
+    content: "pho |";
+  }
+  94% {
+    content: "ph  |";
+  }
+
+  95% {
+    content: "p  |";
+  }
+
+  96% {
+    content: "  |";
+  }
+  97% {
+    content: "  |";
+  }
+  98% {
+    content: "  |";
+  }
+  99% {
+    content: "  |";
+  }
+  100% {
+    content: "  |";
+  }
+}
+
+/* end headers */
+/*start about */
+.shape-border {
+  position: relative;
+}
+.shape-border::before {
+  width: 100px;
+  content: "";
+  height: 3px;
+  background-color: var(--primery-color);
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+}
+.about {
+  color: var(--second-color);
+}
+.about .title-s {
+  color: #1e1e1e;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.about {
+  padding: 4rem 0;
+}
+/* end about */
+
+/*start server */
+
+.box-icon {
+  height: 100px;
+  width: 100px;
+  font-size: 2rem;
+  border-radius: 50%;
+  line-height: 1.55;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-box-shadow: 0 0 0 10px var(--primery-color);
+          box-shadow: 0 0 0 10px var(--primery-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.item-Services:hover .box-icon {
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  color: #fff;
+  background-color: var(--primery-color);
+  -webkit-box-shadow: 0 0 0 10px var(--shadow-color);
+          box-shadow: 0 0 0 10px var(--shadow-color);
+}
+/* end server */
+
+/* start counter*/
+.counter {
+  background-image: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(0, 120, 255, 0.57)),
+      to(rgba(0, 120, 255, 0.57))
+    ),
+    url(../img/counters-bg.jpg);
+  background-image: -o-linear-gradient(
+      rgba(0, 120, 255, 0.57),
+      rgba(0, 120, 255, 0.57)
+    ),
+    url(../img/counters-bg.jpg);
+  background-image: linear-gradient(
+      rgba(0, 120, 255, 0.57),
+      rgba(0, 120, 255, 0.57)
+    ),
+    url(../img/counters-bg.jpg);
+  padding: 8rem 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nu {
+  font-size: 2rem;
+}
+.counter-icon {
+  font-size: 2rem;
+  border-radius: 50%;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-box-shadow: 0 0 0 10px var(--primery-color);
+          box-shadow: 0 0 0 10px var(--primery-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  width: 60px;
+  line-height: 1.5;
+  -webkit-box-shadow: 0 0 0 10px var(--shadow-color);
+          box-shadow: 0 0 0 10px var(--shadow-color);
+}
+/* end counter */
+
+
+/*  start Portfolio*/
+.icon-work {
+  font-size: 30px;
+}
+
+.imag-fuli {
+  max-width: 100%;
+  overflow: hidden;
+}
+.inner-Portfolio:hover img {
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.work-box {
+  margin-bottom: 3rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: #fff;
+}
+
+.work-box:hover img {
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.work-img {
+  display: block;
+  overflow: hidden;
+}
+
+.work-img img {
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.work-content {
+  padding: 2rem 3% 1rem 4%;
+}
+/* end Portfolio */
+
+/* start  testimonial-slider*/
+
+#testimonial-slider {
+  background-image: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(0, 120, 255, 0.6)),
+      to(rgba(0, 120, 255, 0.6))
+    ),
+    url(../img/overlay-bg.jpg);
+  background-image: -o-linear-gradient(
+      rgba(0, 120, 255, 0.6),
+      rgba(0, 120, 255, 0.6)
+    ),
+    url(../img/overlay-bg.jpg);
+  background-image: linear-gradient(
+      rgba(0, 120, 255, 0.6),
+      rgba(0, 120, 255, 0.6)
+    ),
+    url(../img/overlay-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  padding: 10rem 0;
+}
+
+#testimonial-slider .testimonial-img1 {
+  width: 150px;
+  border-radius: 50%;
+}
+.testimonial-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#testimonial-slider .testimonial-img2 {
+  border-radius: 50%;
+}
+
+#testimonial-slider button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+/* end  testimonial-slider*/
+
+
+.Blog .inner-img img {
+  width: 32px;
+  height: 32px;
+}
+.Blog .inner-img {
+  overflow: hidden;
+}
+.box-card {
+  position: absolute;
+  text-align: center;
+  top: -16px;
+  left: 15px;
+  right: 15px;
+  line-height: 25px;
+  overflow: hidden;
+}
+.inner-box {
+  display: inline-block;
+  color: #fff;
+  padding: 0 15px 5px;
+  overflow: hidden;
+  background-color: #0078ff;
+  border-radius: 4px;
+}
+
+.chang-color a p:hover,
+.inner-img a p:hover {
+  color: var(--primery-color);
+}
+.chang-color a p {
+  font-size: 30px;
+}
+
+
+
+
+
+
+#contact {
+  background-image: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(0, 120, 255, 0.6)),
+      to(rgba(0, 120, 255, 0.6))
+    ),
+    url(../img/overlay-bg.jpg);
+  background-image: -o-linear-gradient(
+      rgba(0, 120, 255, 0.6),
+      rgba(0, 120, 255, 0.6)
+    ),
+    url(../img/overlay-bg.jpg);
+  background-image: linear-gradient(
+      rgba(0, 120, 255, 0.6),
+      rgba(0, 120, 255, 0.6)
+    ),
+    url(../img/overlay-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#contact .input {
+  border-radius: 0;
+}
+.section-padding {
+  padding-top: 4rem;
+}
+.box-padding {
+  padding: 3rem;
+}
+
+#contact button[type="submit"] {
+  background: #0078ff;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 5rem;
+  font-size: 19.2px;
+}
+
+#contact button[type="submit"]:hover {
+  background: #3393ff;
+  -webkit-box-shadow: 0 0 0 4px var(--shadow-color);
+          box-shadow: 0 0 0 4px var(--shadow-color);
+}
+
+#contact .icon-footer {
+  width: 2rem;
+  height: 2rem;
+  -webkit-box-shadow: 0 0 0 3px var(--primery-color);
+          box-shadow: 0 0 0 3px var(--primery-color);
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+#contact .icon-footer:hover {
+  background-color: var(--primery-color);
+  color: #fff;
+  -webkit-box-shadow: 0 0 0 3px var(--shadow-color);
+          box-shadow: 0 0 0 3px var(--shadow-color);
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+#contact .list-icon .fa {
+  color: var(--primery-color);
+}
+
+/* start footer */
+
+#footer {
+  text-align: center;
+  color: #fff;
+  padding: 25px 0;
+  background: #0062d3;
+}
+.fa-arrow-up::after {
+  content: "\f145";
+}
+.back-to-top {
+  opacity: 1;
+  visibility: visible;
+}
+/* end footer */
